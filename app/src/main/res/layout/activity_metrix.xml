@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/textViewInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03exConvertion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/textViewmetrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metrix"
+        app:layout_constraintTop_toBottomOf="@id/textViewInfo1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="120dp"
+        />
+    <TextView
+        android:id="@+id/textViewkm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KM"
+        app:layout_constraintTop_toBottomOf="@id/textViewmetrix"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="60dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextKilometr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="01dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/textViewkm"
+        app:layout_constraintLeft_toRightOf="@id/textViewkm"
+
+        app:layout_constraintTop_toTopOf="@id/textViewkm"
+        tools:ignore="SpeakableTextPresentCheck" />
+    <Button
+        android:id="@+id/buttonConvertion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textViewkm"
+        android:layout_marginBottom="50dp"
+        />
+    <Button
+        android:id="@+id/buttonreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        app:layout_constraintTop_toTopOf="@id/buttonConvertion"
+        app:layout_constraintBottom_toBottomOf="@id/buttonConvertion"
+        app:layout_constraintEnd_toEndOf="@id/editTextKilometr"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

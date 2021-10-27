@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03exConvertion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tempetrature"
+        app:layout_constraintTop_toBottomOf="@id/textViewInfo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="120dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewcelicius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        android:text="Celicius"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTemperature" />
+
+    <EditText
+        android:id="@+id/editTextTextCelic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/textViewcelicius"
+        app:layout_constraintLeft_toRightOf="@id/textViewcelicius"
+        app:layout_constraintTop_toTopOf="@id/textViewcelicius"
+
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonConvertion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertion"
+      app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textViewcelicius"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:id="@+id/buttonreturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        app:layout_constraintTop_toTopOf="@id/buttonConvertion"
+        app:layout_constraintBottom_toBottomOf="@id/buttonConvertion"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextCelic"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
